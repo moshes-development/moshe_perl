@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.head-bar {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 25px;
+  overflow: hidden;
+}
+.head-bar h1 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.head-bar h1 a {
+  color: black;
+  text-decoration: none;
+}
+.head-bar .menu-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+}
+.head-bar .menu-icon .bar {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%, 0);
+  margin: 3px;
+}
+.head-bar .menu-icon-animate {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+}
+.head-bar .menu-icon-animate .bar {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%, 0);
+}
+.head-bar .menu-icon-animate .b-one {
+  transform: rotate(-45deg);
+}
+.head-bar .menu-icon-animate .b-two {
+  transform: rotate(45deg);
+}
+.head-bar .menu-icon-animate .b-three {
+  display: none;
+}
+.head-bar .menu {
+  position: absolute;
+  right: 0;
+  width: 65%;
+  height: 95vh;
+  background-color: white;
+  z-index: 9999;
+  transform: translate(500px);
+  border-bottom: solid 3px black;
+  transition: ease-in-out 0.5s;
+  overflow: hidden;
+}
+.head-bar .menu a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.show-case {
+  background-color: black;
+  height: 93.7vh;
+  position: relative;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.show-case .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.show-case .content h2 {
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+.show-case .content p {
+  font-size: 1em;
+  margin-top: 7px;
+  color: white;
+  width: 100%;
+  font-family: "Inconsolata", monospace;
+}
+.show-case .content span {
+  color: red;
+  font-family: "Inconsolata", monospace;
+}
+
+.about {
+  padding: 150px 50px;
+  transform: scale(0.8);
+  transition: ease-in-out 0.5s;
+}
+.about h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+.about p {
+  text-align: justify;
+  font-size: 1.1em;
+}
+.about .btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 17px;
+  border-radius: 50px;
+  width: 45%;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  border: solid 2px black;
+}
+.about .btn a {
+  text-decoration: none;
+  color: white;
+}
+.about .btn:hover {
+  background-color: white;
+  border: solid 2px black;
+  transition: ease-in-out 0.2s;
+}
+.about .btn:hover a {
+  color: black;
+}
+
+.buffer {
+  height: 100px;
+  background-color: black;
+  position: relative;
+}
+.buffer .sub-buffer {
+  width: 0%;
+  height: 20%;
+  background-color: red;
+  position: absolute;
+  bottom: 20px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  transition: ease-in-out 0.7s;
+}
+
+.buffer-two {
+  height: 100px;
+  background-color: black;
+  position: relative;
+}
+.buffer-two .sub-buffer-two {
+  width: 0%;
+  height: 20%;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  transition: ease-in-out 0.7s;
+}
+
+.work {
+  padding: 75px 0 30px 0;
+  overflow: hidden;
+}
+.work h3 {
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.work .card {
+  position: relative;
+  overflow: hidden;
+  width: 85%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px -5px black;
+}
+.work .card h5 {
+  font-size: 20px;
+  color: black;
+}
+.work .card .sub-header {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: black;
+}
+.work .card img {
+  width: 100%;
+  margin: auto;
+  border-radius: 2px;
+}
+.work .card p {
+  margin-top: 10px;
+}
+.work .card p a {
+  color: black;
+}
+.work .card .btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 17px;
+  border-radius: 2px;
+  width: 45%;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+.work .card .btn a {
+  color: white;
+  text-decoration: none;
+}
+.work .card .stripe {
+  position: absolute;
+  height: 400px;
+  width: 10px;
+  background-color: red;
+  right: 45px;
+  top: 0;
+  transform: rotate(45deg);
+  box-shadow: 0 0 20px -4px black;
+  transition: ease-in-out 0.3s;
+}
+.work .card .stripe-two {
+  position: absolute;
+  height: 400px;
+  width: 5px;
+  background-color: black;
+  right: 30px;
+  top: 0;
+  transform: rotate(45deg);
+  box-shadow: 0 0 20px -4px black;
+}
+
+.contact {
+  padding: 50px 0 50px 0;
+}
+.contact h4 {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.contact .only {
+  text-align: center;
+  font-size: 20px;
+  padding: 0 30px;
+}
+.contact .content {
+  margin-top: 20px;
+  text-align: center;
+}
+.contact .content p {
+  font-size: 18px;
+  margin-bottom: 7px;
+  padding-left: 20px;
+  color: black;
+}
+.contact .content p a {
+  color: black;
+}
+
+.foot-bar {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.foot-bar .icon {
+  width: 20px;
+  margin-left: 10px;
+}/*# sourceMappingURL=style.css.map */
